@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    color: rgb(120, 35, 45);
+    border:  3px solid pink;
+}
+h1{border: inherit;}

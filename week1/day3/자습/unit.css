@@ -1,0 +1,57 @@
+html{
+    font-size:10px;
+}
+
+.px{
+    font-size: 20px;
+}
+
+.px .btn1{
+    font-size: 30px;
+    padding: 4px 20px;
+    border-radius: 0.2em;
+}
+
+
+
+.em{
+    font-size: 2em;
+    /* 20px */
+}
+
+.em .btn1,
+.em .btn2,
+.em .btn3{
+    padding: 0.2em 1em;;
+    border-radius: 0.2em;
+}
+
+.em .btn1{
+    font-size: 1.5em;
+    /* 
+    html 의  font-size :10 px
+    부모인 em은 2배인 20px
+    현재 30px
+     */
+}
+
+.rem{
+    font-size: 2rem;
+    /* 20px */
+}
+
+.rem .btn1,
+.rem .btn2,
+.rem .btn3{
+    padding: 0.2em 1em;
+    border-radius: 0.2em;
+}
+
+.rem .btn1{
+    font-size: 3rem;
+    /* rem은 html 기준으로 글자 크기 
+    html : 10px
+    2rem: 상속 없이 2배
+    3rem: 30px
+    */
+}

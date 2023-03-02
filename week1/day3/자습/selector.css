@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+section p {
+    font-weight: bold;
+}
+
+section > p{
+    color: royalblue;
+}
+
+h1~p{
+    text-decoration: underline;
+}
+
+h1+p{background: yellow;}
+
+div p{
+    background-color: azure;
+}
+

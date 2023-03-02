@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS상속</title>
+    <link rel="stylesheet" href="./Inheritance.css">
+  </head>
+  <body>
+    <section>
+        <h1>상속에 대해 공부합시다</h1>
+        <h2>width, height, margin, padding, border 같은 것은 선택자로 상속되지 않는다.</h2>
+        <h3>이 테두리는 section의 border</h3>
+        <p>inherit: 선택한 요소에 적용된 속성값을 부모와 동일하게 상속받게 한다.</p>
+        <p>initial: 브라우저 기본 스타일 속성을 따르게 한다.</p>
+        <p>unset: 속성을 자연 값으로, 자연적으로 상속되면 inherit 된 것처럼 / 아니면 intial처럼 작동</p>
+
+        <p>button, input 요소 같은 form 관련 태그들은 상속받지 않는다. 밑에 해보겠다</p>
+        <button>상속받기</button>
+        <input type="text" value="hello">
+    </section>
+
+  </body>
+</html>
