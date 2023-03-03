@@ -1,0 +1,37 @@
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+ul::before{
+    content: '[';
+    /* 앞에 생긴다 */
+}
+
+li{
+    list-style: none;
+}
+
+
+li::before{
+    content: '';
+}
+
+li::after{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: skyblue;
+    /* 뒤에 생긴다 */
+}
+
+input{
+    color: red;
+    width: 400px;
+    display: block;
+}
+
+input::placeholder{
+    color: royalblue;
+}
