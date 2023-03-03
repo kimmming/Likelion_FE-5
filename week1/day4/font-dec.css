@@ -1,0 +1,26 @@
+ @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+ *{
+    font-family: 'Black Han Sans', sans-serif;
+ }
+
+ @font-face {
+    font-family: "Pretendard-Regular";
+    src: url("font/Pretendard-Bold.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+	font-family: Pretendard-Regular, "Times New Roman", Dotum, "돋움", sans-serif;
+}
+
+.sh{
+    text-shadow: 1px 1px 2px rgb(175, 255, 159), 0 0 1em rgb(156, 156, 255), 0 0 0.2em rgb(255, 139, 139);
+    font-size: 1.2em;
+    text-align: justify;
+
+}
+.va{
+    font-size: 2em;
+    vertical-align: bottom;
+}
