@@ -1,0 +1,27 @@
+div,
+span{
+    background: skyblue;
+    padding: 20px;
+    margin: 20px;
+    border: 10px solid royalblue;
+}
+
+div{
+    
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    /* 보더까지 width에 포함시킨다 */
+}
+
+div:nth-child(2){
+    padding: 50px 0px;
+    margin: auto;
+}
+
+/* span{
+    padding: 20px;
+    margin: 0 20px;
+    border: 10px solid royalblue;
+    먹힌거
+} */

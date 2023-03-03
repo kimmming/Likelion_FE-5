@@ -1,0 +1,30 @@
+.one{
+    width: 100px;
+    height: 100px;
+    background-color: royalblue;
+    border-radius: 100% ;
+    margin-bottom: 10px;
+}
+
+.two{
+    width: 100px;
+    height: 100px;
+    background-color: royalblue;
+    border-radius: 100% 0 ;
+    margin-bottom: 10px;
+
+}
+.three{
+    width: 100px;
+    height: 100px;
+    background-color: royalblue;
+    border-radius: 0 50% 0 50%;
+    margin-bottom: 10px;
+}
+.four{
+    width: 100px;
+    height: 50px;
+    background-color: royalblue;
+    border-radius: 50px 50px 0px 0px;
+    margin-bottom: 10px;
+}
