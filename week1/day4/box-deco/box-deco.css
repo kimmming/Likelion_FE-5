@@ -27,13 +27,13 @@
 
 .grad{
     margin: 20vw;
-    background: linear-gradient(90deg, rgb(178, 86, 252), rgb(51, 51, 250));
+    background: linear-gradient(90deg, rgb(178, 86, 252), rgb(73, 107, 241));
     outline:  5px dashed rgb(215, 186, 239);
     border-radius: 10em;
     width: 15vw;
     height: 6vw;
     color: white;
-    font-size: 3em;
+    font-size: 2.5em;
     text-align: center;
     font-weight: bolder;
     line-height: 5.5vw;
@@ -47,7 +47,7 @@
     border-radius: 0 100em 100em 100em;
     box-shadow: 10px 10px 15px 2px rgb(200, 200, 200)  ;
     color: rgb(0, 0, 0);
-    font-size: 3em;
+    font-size: 2.5em;
     text-align: center;
     font-weight: bolder;
     line-height: 5.5vw;
