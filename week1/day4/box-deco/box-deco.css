@@ -1,35 +1,32 @@
 *{
     margin: 0;
-    padding: 00;
+    padding: 0;
     font-size: 10px;
 }
 
 .black-box{
   
     margin: 5vw 5vw 5vw 10vw;
-    background: #343F50;
-    border: 3px solid #4A5568;
-    border-bottom: 0px ;
-    border-right: 0px;
-    outline: solid 3px black;
     width: 160px;
     height: 60px;
+    background: #343F50;
+    border-top: 3px solid #4A5568;
+    border-left: 3px solid #4A5568;
+    outline: solid 3px black;
     color: white;
     text-align: center;
     font-weight: bolder;
     font-size: 2.5em;
     line-height: 50px;
-
-    
 }
 
 .grad-box{
     margin: 5vw 5vw 5vw 10vw;
-    background: linear-gradient(90deg, #7e50f5, #396bf2);
-    outline:  5px dashed #e6d6ff;
-    border-radius: 10em;
-    width: 160px;
+    width: 150px;
     height: 80px;
+    background: linear-gradient(90deg, #8c4af6, #396bf2);
+    outline:  4px dashed #e6d6ff;
+    border-radius: 10em;
     color: white;
     font-size: 2.5em;
     text-align: center;
@@ -43,11 +40,10 @@
     height: 70px;
     border: 3px solid #ececec;
     border-radius: 0 100em 100em 100em;
-    box-shadow: 10px 10px 10px 2px#e5e5e5  ;
+    box-shadow: 10px 10px 10px 2px#e5e5e5;
     color: #39464c;
     font-size: 2.5em;
     text-align: center;
     font-weight: bolder;
     line-height: 65px;
-
 }
