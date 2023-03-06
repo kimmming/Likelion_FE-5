@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.one{
+    margin: 30px;
+    width: 288px;
+    height: 348px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.wrap{
+    padding: 20px 20px 20px 20px;
+    
+}
+
+.thum{
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+
+}
+
+.title{
+    margin-bottom: 15px;
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+.main{
+    overflow:hidden;  
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 12px;
+}
+
+a{
+    padding: 25px;
+    color: black;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
