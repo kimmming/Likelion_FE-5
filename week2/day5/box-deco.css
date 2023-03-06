@@ -1,0 +1,43 @@
+div{
+    width: 100px;
+    height: 40px;
+    line-height: 33px;
+    text-align: center;
+    background: #eee;
+    box-sizing: border-box;
+}
+/* 
+div:not(:first-child){
+    margin-top: 20px;
+    둘이 똑같음
+} */
+
+div~div{
+    margin-top: 20px;
+}
+
+.box1{
+    color: #fff;
+    background: #343f50;
+    box-shadow: inset 5px 5px #4a5568;
+    border: 5px solid #000;
+}
+
+/* .box1:focus{
+    outline-color: royalblue;
+    아웃라인 쓸 때 focus 된 상태까지 고려할 것
+    포커스가 감춰져 사용자가 길을 잃을 수 있음 사용 주의!
+} */
+
+.box2{
+    color: #fff;
+    border-radius: 24px;
+    background: linear-gradient(90deg, #7e50f5, #396bf2);
+    border: 5px dashed rgba(134,17,136);
+    background-clip: padding-box;
+}
+
+
+.box3{
+
+}
