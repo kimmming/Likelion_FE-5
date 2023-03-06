@@ -1,0 +1,15 @@
+div{
+    display: inline;
+    background: rosybrown;
+}
+
+div~div{
+    margin-top: 10px;
+}
+
+span{
+    /* display: block; */
+    background: salmon;
+    width: 199px;
+    height: 100px;
+}

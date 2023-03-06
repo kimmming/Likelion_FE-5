@@ -39,5 +39,7 @@ div~div{
 
 
 .box3{
-
+    border: 5px solid #ddd;
+    border-radius: 0 24px 24px 24px;
+    box-shadow: 5px 5px 10px 0 #ddd;
 }

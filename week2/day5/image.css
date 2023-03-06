@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.wrap{
+    background: yellow;
+    font-size: 50px;
+}
+
+img {
+    vertical-align: top;
+    /* display: block;
+    이거는 텍스트가 한 블록 떨어짐 */
+}
+
+.wrap img{
+    display: block;
+}
+
+.ratio{
+    width: 300px;
+    aspect-ratio: 2 / 1;
+    object-fit: cover;
+}
+
+.thumbnail{
+    position: relative;
+    height: 0;
+    padding-top: 50%; 
+    /* 부모의 가로 너비 */
+    overflow: hidden;
+}
+.thumbnail  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+  }
