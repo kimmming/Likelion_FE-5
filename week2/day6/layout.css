@@ -1,6 +1,7 @@
 header{
    background: skyblue;
    height: 100px;
+   margin-bottom: 20px;
 }
 
 section{
@@ -8,17 +9,18 @@ section{
     float: left;
     width: 70%;
     height: 300px;
-
+    border: 10px solid black;
+    box-sizing: border-box;
 }
 
 aside{
     background: rgb(167, 238, 167);
     height: 300px;
-
+    margin-bottom: 20px;
 }
 
 footer{
     background: rgb(250, 184, 178);
     height: 100px;
-    /* clear: both; */
+    clear: both;
 }
