@@ -1,0 +1,24 @@
+header{
+   background: skyblue;
+   height: 100px;
+}
+
+section{
+    background: rgb(181, 170, 255);
+    float: left;
+    width: 70%;
+    height: 300px;
+
+}
+
+aside{
+    background: rgb(167, 238, 167);
+    height: 300px;
+
+}
+
+footer{
+    background: rgb(250, 184, 178);
+    height: 100px;
+    /* clear: both; */
+}
