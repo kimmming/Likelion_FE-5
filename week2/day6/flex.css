@@ -1,0 +1,15 @@
+.flex-container{
+    display: flex;
+    justify-content:space-between;
+}
+
+.flex-item{
+    background: skyblue;
+    border: 3px solid seagreen;
+}
+
+
+.column{
+    flex-direction: column;
+}
+

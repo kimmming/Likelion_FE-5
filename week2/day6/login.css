@@ -1,0 +1,68 @@
+body{
+    background: #FFFFFF;
+}
+
+.wrap{
+    border: 1px solid #DBDBDB;
+    border-radius: 5px;
+    width: 350px;
+    height: 140px;
+    margin: 30px 0px 0px 25px;
+    padding: 19px 16px 18px 16px;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+.intro{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.login{
+    width: 318px;
+    height: 40px;
+    background:#711BFF ;
+    border-radius: 4px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+
+.id-wrap{
+    float: left;
+    overflow: hidden;
+}
+
+.lock-img{
+    float: left;
+    overflow: hidden;
+    vertical-align:top;
+}
+
+.id{
+    text-decoration: none;
+    float: left;
+}
+
+.vertical{
+    display: inline;
+    float: left;
+    height: 20px;
+}
+
+.password{
+    text-decoration: none;
+    float: left;
+}
+
+.sign-up-wrap{
+    width: 70px;
+    margin-right: 0;
+    float: right;
+    text-decoration: none;
+}
+
+.user{
+   float: left;
+}

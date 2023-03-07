@@ -1,0 +1,41 @@
+.container{
+    background: gold;
+    margin-bottom:20px;
+    /* overflow: hidden; */
+}
+
+.container::after{
+    content: '';
+    display: block;
+    clear: left;
+}
+
+[class^="box"]{
+    width: 100px;
+    height: 100px;
+    background: rgba(141,75,246,0.8);
+    color: white;
+    line-height: 100px;
+    text-align: center;
+}
+
+[class^="box"]:first-child{
+    background:skyblue;
+}
+
+[class^="box"]:last-child{
+    background: saddlebrown;
+}
+
+.box:first-child,
+.box:nth-child(2){
+    float: left;
+}
+
+.box:last-child{
+    clear: left;
+}
+
+.box-left{
+    float: left;
+}
