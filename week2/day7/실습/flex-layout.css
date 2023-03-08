@@ -1,0 +1,35 @@
+
+.wrap{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    height: 400px;
+    justify-content: space-between;
+}
+
+header{
+    background: salmon;
+}
+
+.wrap2{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+
+.wrap section{
+    background: gold;
+    flex-grow: 1;
+}
+
+.wrap aside{
+    background: rgb(200, 200, 254);
+    flex-basis: 200px;
+}
+
+
+footer{
+    background: green;
+}

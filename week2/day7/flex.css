@@ -1,0 +1,29 @@
+.flex-container{
+    display: flex ;
+    flex-direction: column;
+    background: #eee;
+    border: 2px solid #ddd;
+    margin-bottom: 20px;
+    height: 150px;
+}
+
+.flex-item{
+    background: skyblue;
+    border: 3px solid blue;
+}
+
+span.flex-item{
+    background: gold;
+}
+
+.center{
+    justify-content: center;
+}
+
+.flex-end{
+    justify-content: flex-end;
+}
+
+.space-between{
+    justify-content: space-between;
+}

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+
+.container{
+ background-image: url(https://img.freepik.com/free-photo/vibrant-liquid-wavy-background-3d-illustration-abstract-iridescent-fluid-render-neon-holographic-smooth-surface-with-colorful-interference-stylish-spectrum-flow-motion_1217-2505.jpg?w=900&t=st=1677223227~exp=1677223827~hmac=e4fda6f6b4d88b97a658d4b07b1250a1f1dc3dd01ec9b4229c9b7623f7bd1359);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+    width: 600px;
+    color: white;
+    background-color: rgba(0,0,0,0.1);
+    box-shadow: 1px 1px 13px rgba(255,255,255,1);
+    border-radius: 20px;
+    /* border: 1px solid #fff; */
+    backdrop-filter: blur(9px);
+    font-family: 'Tilt Neon', cursive;
+    text-shadow: 1px 1px 10px;
+    transition: ease-in-out 1200ms;
+}
+
+.card:hover {
+    text-shadow: 1px 1px 1px;
+    color: black;
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: 5px 5px 100px rgba(255,255,255,0.5);
+}
+
+.title{
+    margin-top: 40px;
+    font-size: 64px;
+}
+
+.info{
+    margin-bottom: 50px;
+    font-size: 36px;
+}
