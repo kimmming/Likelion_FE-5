@@ -7,6 +7,15 @@
     justify-content: space-between;
 }
 
+header,
+section,
+aside,
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 header{
     background: salmon;
 }

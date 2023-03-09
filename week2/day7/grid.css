@@ -1,0 +1,17 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(50px,150px)); 
+    grid-template-rows: 2fr 1fr;
+    overflow: hidden;
+}
+
+.grid-item{
+    background: skyblue;
+    border: 3px solid royalblue;
+    width: 100px;
+    height: 100px;
+}
+
+/* span.grid-item{
+    background: gold;
+} */
