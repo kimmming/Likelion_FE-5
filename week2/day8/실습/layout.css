@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    background: skyblue;
+    height: 100px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    height: 500px;
+}
+
+section{
+    background: rgb(54, 54, 92);
+    width: 80%;
+}
+
+aside{
+    background: lime;
+    width: 20%;
+}
+
+footer{
+    background: salmon;
+    height: 100px;
+}
