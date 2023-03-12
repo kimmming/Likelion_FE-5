@@ -1,0 +1,22 @@
+.container {
+    display: grid;
+    gap: 10px;
+    width: 600px;
+    background: rgb(171, 171, 255);
+    margin-bottom: 10px;
+    border: 10px solid #aaa;
+}
+
+.container div{
+    background: skyblue;
+    height: 100px;
+    border: 10px solid royalblue;
+}
+
+.autofill{
+    grid-template-columns: repeat(auto-fill, minmax(500px,auto));
+}
+
+.autofit{
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+}
