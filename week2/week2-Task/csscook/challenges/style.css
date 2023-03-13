@@ -4,23 +4,29 @@
     box-sizing: border-box;
 }
 
-
 body{
-    background-image: url(./images/bg.png);
-}
-.container{
-    width: 400px;
-    height: 800px;
-    color: white;
-    
+    background: url(./images/bg.png) no-repeat ;
+    background-size: cover;
 }
 
-.container img {
-    
+.container{
+    width: 300px;
+    height: 500px;
+    color: white;
+    margin: 20vh auto;
 }
+
 
 .text-wrap{
     background:rgb(148 90 46) ;
+    background-image: url(./images/green.png) ;
+    background-repeat: no-repeat;
     border-radius: 0px 0px 30px 30px;
+    box-shadow: 0px 10px 1px rgb(69, 41, 20) ;
+    padding: 50px 20px 30px 20px;
+    font-size: 15px;
+}
 
+.text-wrap h1{
+    margin-bottom: 10px;
 }
