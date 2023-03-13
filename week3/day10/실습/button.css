@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.default{
+    margin: 50px;
+}
+
+.default button {
+    background: #343F50;
+    width: 88px;
+    height: 32px;
+
+}
+
+.default .black{
+    color: white;
+}
+
+.default .blue{
+    color: blue;
+}
+
+.default .red{
+    color: red;
+}
+
+.default .black:hover,
+.blue:hover,
+.red:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.default .blue:hover{
+    background: skyblue;
+}
+
+.default .red:hover{
+    background: red;
+}
+
+.default .black:active,
+.blue:active,
+.red:active{
+    box-shadow: 1px 1px 1px -10;
+}
