@@ -1,0 +1,45 @@
+
+table{
+    border: 3px solid #000;
+    border-collapse: collapse;
+    
+}
+
+caption{
+    caption-side: bottom;
+    margin-top: 20px;
+}
+
+.col-first{
+    /* width: 100px; */
+}
+
+.col-width{
+    background: skyblue;
+    width: 120px;
+}
+
+.eng{
+    background: gold;
+}
+
+tfoot tr:first-child{
+    background: lime;
+}
+
+th, td{
+    border: 1px solid #000;
+    padding: 4px 16px;
+}
+
+th{
+    background: #eee;
+}
+
+td{
+    text-align: center;
+}
+
+tfoot td{
+    font-weight: bold;
+}
