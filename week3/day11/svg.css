@@ -1,0 +1,17 @@
+.a11y-hidden{
+    /* 웹 접근성을 고려한 숨김처리 */
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(); 
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+.bg-icon{
+    width: 24px;
+    height: 24px;
+    background: url(./assets/icon-home.svg) no-repeat center center;
+}
