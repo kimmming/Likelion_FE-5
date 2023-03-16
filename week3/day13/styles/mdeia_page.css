@@ -1,0 +1,7 @@
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    "a b"
+    "a c";
+}
