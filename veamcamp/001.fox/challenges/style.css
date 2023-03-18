@@ -1,0 +1,53 @@
+/* Resets */
+
+h1, p {
+    margin: initial;
+}
+
+img{
+    vertical-align: top;
+}
+
+.wrapper{
+    width: 500px;
+    margin: 100px auto;
+}
+
+
+/* Components */
+
+body{
+    background-image: url(images/bg.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.card{
+    color: white;
+}
+
+.card-cover{
+    margin: 0 auto;
+    display: block;
+}
+
+.card-contents{
+    border-radius: 10px 10px 30px 30px;
+    color: white;
+    background-color: #93572e;
+    background-image: url(images/green.png);
+    background-repeat: repeat-x;
+    padding: 64px 20px 40px 20px;
+    border-bottom: 10px solid #4a260b;
+}
+
+.card-contents h1 {
+    margin-bottom: 10px;
+}
+
+.card-contents  p{
+    color: antiquewhite;
+    margin-bottom: 1.2em;
+}
