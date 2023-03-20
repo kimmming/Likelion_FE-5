@@ -1,0 +1,68 @@
+/* -----reset */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+button {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    border: 0;
+    background: none;
+    font: inherit;
+}
+
+button:not(:disabled){
+    cursor: pointer;
+}
+
+ul,
+li {
+    list-style: none;
+}
+/* reset----- */
+
+/* ----header */
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    width: 650px;
+    border-bottom: 2px solid #bdbdbd;
+    padding-bottom: 37px;
+    margin: auto;
+}
+.cinema-nav ul {
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    margin-top: 18px;
+}
+
+.cinema-nav button {
+    padding: 10px 20px;
+    color: #828282;
+}
+.cinema-nav button.active{
+    font-weight: bold;
+    color: black;
+}
+
+/* header---- */
+
+.cinema-grid-list{
+    display: grid;
+    grid-template-areas:
+    "a b c d"
+    "e f g h";
+    border: 1px solid #828282;
+    border-radius: 75px;
+}
+
+.cinema-list{
+}
