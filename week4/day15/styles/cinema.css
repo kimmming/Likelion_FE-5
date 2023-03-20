@@ -25,6 +25,11 @@ ul,
 li {
     list-style: none;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
 /* reset----- */
 
 /* ----header */
@@ -55,14 +60,137 @@ h1 {
 
 /* header---- */
 
-.cinema-grid-list{
-    display: grid;
-    grid-template-areas:
-    "a b c d"
-    "e f g h";
-    border: 1px solid #828282;
-    border-radius: 75px;
+.wrap{
+    border: 2px solid #bdbdbd;
+    border-radius: 15px;
+    background: #f2f2f2;
+    padding: 40px 30px 30px;
+    width: 1060px;
+    margin: 86px auto 135px;
 }
 
-.cinema-list{
+/* ----main */
+main {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(220px,1fr));
+    gap: 24px 23px;
+    border: 2px solid #bdbdbd;
+    border-radius: 15px;
+    background: #fff;
+    padding: 30px;
+    margin-top: 28px;
 }
+
+.a11y-hidden{
+    /* 웹 접근성을 고려한 숨김처리 */
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(); 
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+/* ----article */
+.cinema-card{
+    /* width: 220px; */
+    border: 1px solid #BDBDBD;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.cinema-contents{
+    padding: 19px 20px 18px;
+}
+
+.cinema-contents img {
+    border: 1px solid #BDBDBD;
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    aspect-ratio: 180 / 250;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cinema-title{
+    font-size: 16px;
+    margin: 12px 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.ellipsis{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.cinema-info{
+    font-size: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.cinema-info li {
+    display: flex;
+}
+
+
+.cinema-info li:first-child{
+    color: #828282;
+    margin-right: 5px;
+}
+
+
+.tit + .ellipsis {
+    float: right;
+    width: 150px;
+}
+
+.star {
+    background: url(../img/icon-star.svg) no-repeat 0 0 / 1em;
+    padding-left: 1.3em ;
+}
+
+.button-group{
+    border-top: 1px solid #bdbdbd;
+    display: flex;
+
+}
+
+.button-group a,
+.button-group button {
+    background: #f2f2f2;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.button-group a {
+    border-right: 1px solid #bdbdbd;
+    border-radius: 0 0 0 10px;
+}
+
+.button-group a:focus {
+    z-index: 1;
+}
+.button-group button {
+    border-radius: 0 0 10px 0 ;
+}
+
+.button-group button::before {
+    content: "";
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    background: url(../img/icon-play.svg) no-repeat 0 50% / 1em;
+}
+
+/* main---- */

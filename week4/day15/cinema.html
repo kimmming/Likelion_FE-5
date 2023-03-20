@@ -10,7 +10,10 @@
 
 </head>
 <body>
-    <header>
+    <div class="wrap">
+
+        <!-- header -->
+        <header>
         <h1 >정글 시네마 영화 목록</h1>
         <nav class="cinema-nav">
             <ul>
@@ -21,68 +24,238 @@
             </ul>
         </nav>
     </header>
-
-    <main class="cinema-grid-list">
-        <article class="cinema-list">
-            <img src="./img/poster-img1.jpg" alt="">
-            <h3>이름</h3>
-            <ul>
-                <li>개요</li>
-                <li>평점</li>
-                <li>개봉</li>
-                <li>출연</li>
-            </ul>
-            <a href="#">예매하기</a>
-            <button type="button">예고편</button>
-        </article>
-        <article class="cinema-list">
-            <img src="./img/poster-img1.jpg" alt="">
-            <h3>이름</h3>
-            <ul>
-                <li>개요</li>
-                <li>평점</li>
-                <li>개봉</li>
-                <li>출연</li>
-            </ul>
-            <a href="#">예매하기</a>
-            <button type="button">예고편</button>
-        </article>
-        <article class="cinema-list">
-            <img src="./img/poster-img1.jpg" alt="">
-            <h3>이름</h3>
-            <ul>
-                <li>개요</li>
-                <li>평점</li>
-                <li>개봉</li>
-                <li>출연</li>
-            </ul>
-            <a href="#">예매하기</a>
-            <button type="button">예고편</button>
-        </article>
-        <article class="cinema-list">
-            <img src="./img/poster-img1.jpg" alt="">
-            <h3>이름</h3>
-            <ul>
-                <li>개요</li>
-                <li>평점</li>
-                <li>개봉</li>
-                <li>출연</li>
-            </ul>
-            <a href="#">예매하기</a>
-            <button type="button">예고편</button>
-        </article>
-        <article class="cinema-list">
-            <img src="./img/poster-img1.jpg" alt="">
-            <h3>이름</h3>
-            <ul>
-                <li>개요</li>
-                <li>평점</li>
-                <li>개봉</li>
-                <li>출연</li>
-            </ul>
-            <a href="#">예매하기</a>
-            <button type="button">예고편</button>
+    <!-- header -->
+    <!-- main -->
+    <main>
+        <h2 class="a11y-hidden">현재 상영 영화</h2>
+        <article class="cinema-card">
+            <div class="cinema-contents">
+                <img src="./img/poster-img1.jpg" alt="">
+                <!-- <img src="http://placehold.it/600x500" alt=""> 더미이미지 -->
+                <h3 class="cinema-title">위니브 월드 : 새로운 시대</h3>
+                <ul class="cinema-info">
+                    <li>
+                        <span>개요</span>
+                        <span>판타지</span>
+                    </li>
+                    <li>
+                        <span>평점</span>
+                        <span class="star">9.05</span>
+                    </li>
+                    <li>
+                        <span>개봉</span>
+                        <time datetime="2021-03-27">2021.03.27</time>
+                    </li>
+                    <li>
+                        <span class="tit">출연</span>
+                        <span class="ellipsis">라이캣, 소울곰, 개리씨, 기타등등</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="button-group">
+                <a href="#">예매하기</a>
+                <button type="button">예고편</button>
+            </div>
+        </article> <article class="cinema-card">
+            <div class="cinema-contents">
+                <img src="./img/poster-img1.jpg" alt="">
+                <!-- <img src="http://placehold.it/600x500" alt=""> 더미이미지 -->
+                <h3 class="cinema-title">위니브 월드 : 새로운 시대</h3>
+                <ul class="cinema-info">
+                    <li>
+                        <span>개요</span>
+                        <span>판타지</span>
+                    </li>
+                    <li>
+                        <span>평점</span>
+                        <span class="star">9.05</span>
+                    </li>
+                    <li>
+                        <span>개봉</span>
+                        <time datetime="2021-03-27">2021.03.27</time>
+                    </li>
+                    <li>
+                        <span class="tit">출연</span>
+                        <span class="ellipsis">라이캣, 소울곰, 개리씨, 기타등등</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="button-group">
+                <a href="#">예매하기</a>
+                <button type="button">예고편</button>
+            </div>
+        </article> <article class="cinema-card">
+            <div class="cinema-contents">
+                <img src="./img/poster-img1.jpg" alt="">
+                <!-- <img src="http://placehold.it/600x500" alt=""> 더미이미지 -->
+                <h3 class="cinema-title">위니브 월드 : 새로운 시대</h3>
+                <ul class="cinema-info">
+                    <li>
+                        <span>개요</span>
+                        <span>판타지</span>
+                    </li>
+                    <li>
+                        <span>평점</span>
+                        <span class="star">9.05</span>
+                    </li>
+                    <li>
+                        <span>개봉</span>
+                        <time datetime="2021-03-27">2021.03.27</time>
+                    </li>
+                    <li>
+                        <span class="tit">출연</span>
+                        <span class="ellipsis">라이캣, 소울곰, 개리씨, 기타등등</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="button-group">
+                <a href="#">예매하기</a>
+                <button type="button">예고편</button>
+            </div>
+        </article> <article class="cinema-card">
+            <div class="cinema-contents">
+                <img src="./img/poster-img1.jpg" alt="">
+                <!-- <img src="http://placehold.it/600x500" alt=""> 더미이미지 -->
+                <h3 class="cinema-title">위니브 월드 : 새로운 시대</h3>
+                <ul class="cinema-info">
+                    <li>
+                        <span>개요</span>
+                        <span>판타지</span>
+                    </li>
+                    <li>
+                        <span>평점</span>
+                        <span class="star">9.05</span>
+                    </li>
+                    <li>
+                        <span>개봉</span>
+                        <time datetime="2021-03-27">2021.03.27</time>
+                    </li>
+                    <li>
+                        <span class="tit">출연</span>
+                        <span class="ellipsis">라이캣, 소울곰, 개리씨, 기타등등</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="button-group">
+                <a href="#">예매하기</a>
+                <button type="button">예고편</button>
+            </div>
+        </article> <article class="cinema-card">
+            <div class="cinema-contents">
+                <img src="./img/poster-img1.jpg" alt="">
+                <!-- <img src="http://placehold.it/600x500" alt=""> 더미이미지 -->
+                <h3 class="cinema-title">위니브 월드 : 새로운 시대</h3>
+                <ul class="cinema-info">
+                    <li>
+                        <span>개요</span>
+                        <span>판타지</span>
+                    </li>
+                    <li>
+                        <span>평점</span>
+                        <span class="star">9.05</span>
+                    </li>
+                    <li>
+                        <span>개봉</span>
+                        <time datetime="2021-03-27">2021.03.27</time>
+                    </li>
+                    <li>
+                        <span class="tit">출연</span>
+                        <span class="ellipsis">라이캣, 소울곰, 개리씨, 기타등등</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="button-group">
+                <a href="#">예매하기</a>
+                <button type="button">예고편</button>
+            </div>
+        </article> <article class="cinema-card">
+            <div class="cinema-contents">
+                <img src="./img/poster-img1.jpg" alt="">
+                <!-- <img src="http://placehold.it/600x500" alt=""> 더미이미지 -->
+                <h3 class="cinema-title">위니브 월드 : 새로운 시대</h3>
+                <ul class="cinema-info">
+                    <li>
+                        <span>개요</span>
+                        <span>판타지</span>
+                    </li>
+                    <li>
+                        <span>평점</span>
+                        <span class="star">9.05</span>
+                    </li>
+                    <li>
+                        <span>개봉</span>
+                        <time datetime="2021-03-27">2021.03.27</time>
+                    </li>
+                    <li>
+                        <span class="tit">출연</span>
+                        <span class="ellipsis">라이캣, 소울곰, 개리씨, 기타등등</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="button-group">
+                <a href="#">예매하기</a>
+                <button type="button">예고편</button>
+            </div>
+        </article> 
+        <article class="cinema-card">
+            <div class="cinema-contents">
+                <img src="./img/poster-img1.jpg" alt="">
+                <!-- <img src="http://placehold.it/600x500" alt=""> 더미이미지 -->
+                <h3 class="cinema-title">위니브 월드 : 새로운 시대</h3>
+                <ul class="cinema-info">
+                    <li>
+                        <span>개요</span>
+                        <span>판타지</span>
+                    </li>
+                    <li>
+                        <span>평점</span>
+                        <span class="star">9.05</span>
+                    </li>
+                    <li>
+                        <span>개봉</span>
+                        <time datetime="2021-03-27">2021.03.27</time>
+                    </li>
+                    <li>
+                        <span class="tit">출연</span>
+                        <span class="ellipsis">라이캣, 소울곰, 개리씨, 기타등등</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="button-group">
+                <a href="#">예매하기</a>
+                <button type="button">예고편</button>
+            </div>
+        </article> <article class="cinema-card">
+            <div class="cinema-contents">
+                <img src="./img/poster-img1.jpg" alt="">
+                <!-- <img src="http://placehold.it/600x500" alt=""> 더미이미지 -->
+                <h3 class="cinema-title">위니브 월드 : 새로운 시대</h3>
+                <ul class="cinema-info">
+                    <li>
+                        <span>개요</span>
+                        <span>판타지</span>
+                    </li>
+                    <li>
+                        <span>평점</span>
+                        <span class="star">9.05</span>
+                    </li>
+                    <li>
+                        <span>개봉</span>
+                        <time datetime="2021-03-27">2021.03.27</time>
+                    </li>
+                    <li>
+                        <span class="tit">출연</span>
+                        <span class="ellipsis">라이캣, 소울곰, 개리씨, 기타등등</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="button-group">
+                <a href="#">예매하기</a>
+                <button type="button">예고편</button>
+            </div>
         </article>
     </main>
+    <!-- main -->
+</div>
 </body>
 </html>
