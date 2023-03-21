@@ -1,0 +1,84 @@
+
+.custom-input1,
+.custom-input2 {
+    appearance: none;
+    width: 1.6em;
+    height: 1.6em;
+    background:  url(../img/check1.svg) no-repeat center/ 90%;
+    margin: 0 4px 3px 0;
+    vertical-align: middle;
+    transition: all 0.3s;
+}
+
+.custom-input1:checked {
+    background: url(../img/check1-checked.svg) no-repeat center/ 90%;
+}
+
+.custom-input:checked +label,
+.custom-input2:checked+label {
+    font-weight: bold;
+    color: royalblue;
+}
+.custom-input2:checked {
+    background: url(../img/check2-checked.svg) no-repeat center/ 90%;
+}
+
+/* select */
+select {
+    color:inherit;
+}
+.custom-select1 {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #c4c4c4;
+    padding: 0 14px;
+    appearance: none;
+    background: url(../img/select.svg) no-repeat calc(100% - 15px) / 1em;
+    font-size: 14px;
+}
+
+.custom-select1:focus {
+    border-color: #9b51e0;
+    outline: none;
+    box-shadow: 0 0 4px #F8E4ff;
+}
+
+/* button */
+button {
+    border: 0;
+    background: none;
+    font: inherit;
+    color: inherit;
+}
+button, ul, li {
+    padding: 0;
+    margin: 0;
+}
+ul, li {
+    list-style: none;
+}
+.custom-select {
+    width: 200px;
+}
+.btn-select {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #c4c4c4;
+    padding: 0 14px;
+    background: url(../img/select.svg) no-repeat calc(100% - 15px) / 1em;
+    font-size: 14px;
+}
+.btn-select:focus {
+    border-color: #9b51e0;
+    outline: none;
+    box-shadow: 0 0 4px #F8E4ff;
+}
+
+.custom-select ul {
+    border-radius: 10px;
+    border: 1px solid #c4c4c4;
+    box-shadow: 4px 4px 14px #cccccc;
+    padding: 4px 8px;
+}
