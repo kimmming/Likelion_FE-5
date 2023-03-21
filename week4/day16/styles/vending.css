@@ -1,0 +1,116 @@
+/* reset */
+body, 
+h1, 
+h2, 
+p, 
+ul,
+button {
+    padding: 0;
+    margin: 0;
+}
+ul,
+li {
+    list-style: none;
+}
+button {
+    border: 0;
+    background: none;
+    font: inherit;
+    color: inherit;
+}
+button:not(:disabled){
+    cursor: pointer;
+}
+.a11y-hidden{
+    /* 웹 접근성을 고려한 숨김처리 */
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(); 
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+body{
+    background: #eae8fe;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+section {
+    background: #fff;
+}
+
+/* layout */
+/* h1 */
+h1 {
+    text-align: center;
+}
+h1 img{
+    width: 386px;
+    max-width: calc(100% - (97px*2));
+}
+
+/* pc  */
+@media (min-width: 748px) {
+    body{
+        background: #eae8fe;
+    }
+    main {
+        display: grid;
+        margin: auto;
+        width: 748px;
+        grid-template-columns:  1fr 1fr;
+        grid-template-rows:  50px auto;
+        grid-template-areas: 
+        "section1 section2"
+        "section1 section3";
+        gap: 20px 28px;
+    }
+
+    .section1 {
+        grid-area: section1;
+    }
+    .section2 {
+        grid-area: section2;
+    }
+    .section3 {
+        grid-area: section3;
+    }
+    h1 {
+        margin-bottom: 68px;
+    }
+}
+
+/* mobile  */
+@media (max-width: 748px) {
+    h1 {
+        margin-bottom: 18px;
+    }
+}
+
+/* 판매 음료 */
+.cola-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+.btn-cola{
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 11px 12px 9px;
+}
+.cola-name{
+    font-size: 9px;
+}
+.cola-img{
+    width: 36px;
+}
+.cola-price{
+    font-size: 12px;
+    font-weight: 500;
+    background: #6327fe;
+    color: #fff;
+    padding: 5px 16px;
+    border-radius: 50px;
+}
