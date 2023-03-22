@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인실습</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/login.css">
+
+</head>
+<body>
+    <header>
+            <h1>로그인 또는 회원가입</h1>
+            <button type="button">X</button>
+    </header>
+    <section class="login">
+        <div class="login-input-wrap">
+            <h2>위니브에서 여러분의 궁금증을 해결하세요!:)</h2>
+            <label for="inputID"></label>
+            <input type="email" name="" id="inputId" placeholder="아이디">
+            <label for="inputPW"></label>
+            <input type="password" name="" id="inputPw" placeholder="비밀번호">
+            <input type="checkbox" id="inpHold" class="inp-hold txt-hide">
+            <label for="inpHold" class="labl-hold">로그인 상태 유지</label>
+            <button type="submit">로그인</button>
+        </div>
+        <div class="join-wrap">
+            <a href="#">회원가입</a>
+            <a href="#">아이디/비밀번호 찾기</a>
+        </div>
+        <div class="email-login-wrap">
+            <!-- list-item으로 감싸주는게 낫다 -->
+            <a href="#">구글 계정으로 로그인</a>
+            <a href="#">구글 계정으로 로그인</a>
+            <a href="#">구글 계정으로 로그인</a>
+            <a href="#">구글 계정으로 로그인</a>
+        </div>
+    </section>
+</body>
+</html>

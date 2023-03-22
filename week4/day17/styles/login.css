@@ -1,0 +1,80 @@
+/* reset */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+button{
+    border: none;
+    background: none;
+}
+
+
+/* layout */
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    width: 520px;
+    height: 712px;
+    margin: 100px auto;
+    border: 1px solid #bdbdbd;
+    border-radius: 10px;
+}
+header {
+    width: inherit;
+    height: 59px;
+    /* background: rosybrown; */
+    display: flex;
+    align-items: center;
+    gap: 148px;
+    justify-content: end;
+    border-bottom: 1px solid #bdbdbd;
+}
+.login {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+}
+.login-input-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* header */
+header h1 {
+    font-size: 16px;
+}
+header button {
+    margin-right: 24px;
+}
+/* section */
+.login-input-wrap h2 {
+    font-size: 20px;
+}
+.login-input-wrap input {
+    width: 472px;
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #c4c4c4;
+}
+
+/* email-login-wrap */
+.email-login-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.email-login-wrap a {
+    border: 1px solid #bdbdbd;
+    width: 472px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}

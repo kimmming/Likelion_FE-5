@@ -1,0 +1,46 @@
+.txt-hide {
+    position: absolute;
+    clip: rect(0px, 0px, 0px, 0px);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.labl-hold {
+    position: relative;
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+.labl-hold::before {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    vertical-align: -5px;
+    border: 1px solid black;
+}
+.inp-hold:focus-visible+.labl-hold::before{
+    outline: 2px solid black;
+    outline-offset: 5px;
+}
+
+.labl-hold::after {
+    position: absolute;
+    top:2px;
+    left: 22px;
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url(../img/checkmark.png) no-repeat 0 0/22px;
+    transition: 0.3s ease;
+    opacity: 0;
+}
+.inp-hold:checked + .labl-hold::after {
+    left: 1px;
+    opacity: 1;
+}
