@@ -38,10 +38,11 @@
         <main class="diary-main">
             <h2 class="heart">2023.02.27의 비밀일기</h2>
 
-            <form action="">
+            <form>
                 <label class="a11y-hidden" for="diary-title">제목</label>
                 <input class="input-style" type="text" id="diary-title" placeholder="제목을 입력하세요" required>
-                <textarea class="diary-textarea" placeholder="오늘의 비밀은 무엇인가요?"></textarea>
+                <label class="a11y-hidden" for="diary-content">일기 내용</label>
+                <textarea class="diary-textarea" id="diary-content" placeholder="오늘의 비밀은 무엇인가요?"></textarea>
                 <button class="black-btn" type="submit">작성하기</button>
             </form>
         </main>
@@ -55,11 +56,11 @@
                         <p class="article-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum corporis sequi perspiciatis vitae sunt ipsam blanditiis provident esse laborum repellendus, animi reprehenderit eius accusantium nobis consectetur a maxime beatae sapiente.</p>
                     <div class="button-group">
                         <button type="button">
-                            <img src="./img/icon-edit.svg" alt="">
+                            <img src="./img/icon-edit.svg" alt="수정">
                         </button>
                         <span></span>
                         <button type="button">
-                            <img src="./img/icon-delete.svg" alt="">
+                            <img src="./img/icon-delete.svg" alt="삭제">
                         </button>
                     </div>
                     </article>
@@ -71,11 +72,11 @@
                         <p class="article-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum corporis sequi perspiciatis vitae sunt ipsam blanditiis provident esse laborum repellendus, animi reprehenderit eius accusantium nobis consectetur a maxime beatae sapiente.</p>
                         <div class="button-group">
                             <button type="button">
-                                <img src="./img/icon-edit.svg" alt="">
+                                <img src="./img/icon-edit.svg" alt="수정">
                             </button>
                             <span></span>
                             <button type="button">
-                                <img src="./img/icon-delete.svg" alt="">
+                                <img src="./img/icon-delete.svg" alt="삭제">
                             </button>
                         </div>
                     </article>
@@ -98,7 +99,7 @@
                             </button>
                             <span></span>
                             <button type="button">
-                                <img src="./img/icon-delete.svg" alt="석재">
+                                <img src="./img/icon-delete.svg" alt="삭재">
                             </button>
                         </div>
                     </article>
