@@ -1,0 +1,17 @@
+$minji1: #000;
+$minji2: #0ff;
+// 한글 사용 권장 X 고유 명사 같은경우는 한글 변수 사용할 수 있음
+$민지: #f00;
+$큰글자: 34px;
+
+.one{
+    font-size: $큰글자;
+    color: $minji2;
+}
+.two{
+    color: $minji2;
+    background-color: $minji1;
+}
+.three{
+    color: $minji1;
+}

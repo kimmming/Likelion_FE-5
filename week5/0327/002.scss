@@ -1,0 +1,13 @@
+// 한줄 주석은 없어진다
+
+/* 두줄 주석만 남는다*/
+
+.one {
+    color: blue;
+    .two{
+        color: green;
+        .three{
+            color: red;
+        }
+    }
+}
