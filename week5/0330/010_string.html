@@ -26,6 +26,50 @@
         console.log(txt.substring(3,1)) //작동합니다. slice와 차이가 있습니다.
         console.log(txt.substring(2,-3)) //작동합니다. slice와 차이가 있습니다.
 
+        let txt2 = 'paullab CEO leehojun CEO'
+
+        console.log(txt2.replace('CEO','COO'))
+        console.log(txt2.replaceAll('CEO','COO'))
+        console.log(txt2.replace(/CEO/g,'COO'))
+
+        console.log(txt.toLowerCase())
+        console.log(txt2.toUpperCase())
+        //알고리즘 문제에서 많이 사용됨
+        txt2.includes('CEO')
+        txt2.includes('CDO')
+
+        //메서드 채이닝
+        txt2.replace('CEO','CDO').includes('CDO').toString().toUpperCase()
+
+        //어디서나 정말 많이 사용되는 메서드입니다.
+        txt2.split(' ')
+
+        let text1 = 'aa bb cc dd'
+        let text2 = 'aa-bb-cc-dd'
+        let text3 = 'aa,bb,cc,dd'
+        let text4 = 'aa,bb-cc-dd'
+
+        //['aa', 'bb', 'cc', 'dd']
+
+        console.log(text1.split(' '))
+        console.log(text2.split('-'))
+        console.log(text3.split(','))
+        console.log(text4.split('/[,-]/g'))
+        console.log(text4.replace(',','-').split('-'))
+
+        //자주 사용되진 않지만, 이걸 몰라서 직접 구현하면 번거로운 메서드
+        //trim 공백제거
+        let text = '      hello world'
+        test.replaceAll(' ','')
+        test.trim()
+
+        //padStart()
+        let str1 = '99'
+        console.log(str1.padStart(5,'0'));
+        let str2 = '99'
+        console.log(str1.padStart(5,'-'));
+
+        
     </script>
 </body>
 </html>
