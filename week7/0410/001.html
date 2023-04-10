@@ -32,15 +32,31 @@
     </article>
 
     <script>
-        console.log(document.getElementById('myTxt'));
-        console.log(document.getElementsByTagName('p'));
-        console.log(document.getElementsByClassName('txt1'));
+        //console.log(document.getElementById('myTxt'));
+        //console.log(document.getElementsByTagName('p'));
+        //console.log(document.getElementsByClassName('txt1'));
+        //
+        //console.log(document.getElementsByTagName('li')[0]);
+        //console.log(document.getElementsByTagName('li')[1]);
+        //console.log(document.getElementsByClassName('item-second')[0]);
 
-        console.log(document.getElementsByTagName('li')[0]);
-        console.log(document.getElementsByTagName('li')[1]);
-        console.log(document.getElementsByClassName('item-second')[0]);
+        const container = document.getElementById('container');
+        console.log(container.querySelector('li:last-child'));
+        console.log(container.querySelectorAll('#container'))
+        
 
+        // 요소 생성
+        //const listItem = document.createElement('li')
+        //container.append(listItem);
 
+        // 요소 삭제
+        //const target = document.querySelector('.item-second');
+        //container.remove(target);
+
+        console.log(document.querySelectorAll('li'))
+
+        container.querySelector('.item-second').textContent='라조기'
+        container.querySelector('.item-second').classList.add('new');
     </script>
 </body>
 </html>
