@@ -1,0 +1,5 @@
+console에 내어쓰기
+shift+ Tab
+
+VSC에 내어쓰기
+Ctrl+[]
