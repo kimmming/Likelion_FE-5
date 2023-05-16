@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>heart line</title>
+    <style>
+        #path1 {
+            fill: none;
+            stroke: #ff9797;
+            stroke-width: 5px;
+            stroke-linecap: round;
+            stroke-dasharray: 1588 1588;
+            animation: line 3s infinite;
+        }
+
+        #path2 {
+            fill: none;
+            stroke: #ff9797;
+            stroke-width: 5px;
+            stroke-linecap: round;
+            stroke-dasharray: 2468 2468;
+            animation: line2 3s infinite;
+            animation-timing-function: ease-in;
+        }
+
+        @keyframes line {
+            from{
+                stroke-dashoffset: 1588;
+            }
+            to{
+                stroke-dashoffset: 0;
+            }
+        }
+        @keyframes line2 {
+            from{
+                stroke-dashoffset: 2468;
+            }
+            to{
+                stroke-dashoffset: 0;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <svg viewBox="0 0 1000 182" xmlns="http://www.w3.org/2000/svg">
+        <path id="path1"
+            d="M7 137.125C7 137.125 150.6 175.425 292.3 175.425C434 175.425 537.1 161.025 573.5 85.225C626.6 -25.375 460.9 52.325 500.5 89.025C514 101.525 527.5 0.625014 471.7 6.22501C426 10.825 426.2 56.125 434.1 79.525C451.8 132.525 497.9 168.025 590 175.425C682.1 182.825 829.2 120.425 993.1 120.425" />
+    </svg>
+    <svg width="1250" height="1250" viewBox="0 0 2503 2407" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path id="path2" d="M294 1262C479 1280.5 1003 816.5 648.5 1319.5C294 1822.5 621.5 1598 954.5 1383C1287.5 1168 1400 -449.5 1115 680.5C830 1810.5 851.5 880 1051.5 1383C1251.5 1886 1875 487 1560 1077.5C1766 1516.5 1893.5 699 1536 1238C1178.5 1777 570 1880.5 1163.5 1756C1757 1631.5 1669.5 978 1481.5 1698.5C1293.5 2419 633 1958.5 1705.5 1828.5C2778 1698.5 1996.5 1898.5 1905.5 1510.5C1814.5 1122.5 2432.5 762.5 2069 1607.5" stroke="black"/>
+    </svg>
+            
+    <script>
+        const path1 = document.querySelector('#path1');
+        console.log(path1.getTotalLength())
+    </script>
+</body>
+</html>
