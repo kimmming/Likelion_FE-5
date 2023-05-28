@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background:linear-gradient(120deg,#FFFFFF,#A5B6EE) ;
+    min-height: 100vh;
+}
+
+.timer-container{
+    width: 400px;
+    height: 360px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(140deg,#5572BB,#374B7C);
+    border-radius: 20px;
+    box-shadow: 20px 20px 60px #4862A0 ;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.timer-input {
+    margin-bottom: 10px;
+}
+.timer-display {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.btn {
+    margin-right: 5px;
+    width: 122px;
+    height: 48px;
+    border-radius: 100px;
+    
+}

@@ -1,0 +1,48 @@
+/* layout */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #eee;
+}
+
+/* header */
+.a11y-hidden{
+    /* 웹 접근성을 고려한 숨김처리 */
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(); 
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+.wrapper{
+    width: 500px;
+    height: 600px;
+    text-align: center;
+}
+
+header{
+    margin-top: 200px;
+}
+
+header img{
+    width: 100px;
+    height: 100px;
+}
+
+.login-wrapper{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.login-wrapper input {
+
+}

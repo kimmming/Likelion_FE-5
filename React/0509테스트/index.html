@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타이머</title>
+    <link rel="stylesheet" href="./timer.css">
+
+</head>
+<body>
+    <div class="timer-container">
+        <h1>TIMER</h1>
+        <div class="input-wrap">
+          <input type="number" min="0" id="hoursInput" class="timer-input" placeholder="시간">
+          <input type="number" min="0" max="59" id="minutesInput" class="timer-input" placeholder="분">
+          <input type="number" min="0" max="59" id="secondsInput" class="timer-input" placeholder="초">
+        </div>
+        <p id="timerDisplay" class="timer-display">00:00:00</p>
+        <div class="btn-wrap">
+          <button id="startBtn" class="btn">Start</button>
+          <button id="resetBtn" class="btn">Reset</button>
+        </div>
+    </div>
+    <script>
+        const hoursInput = document.getElementById('hoursInput');
+        const minutesInput = document.getElementById('minutesInput');
+        const secondsInput = document.getElementById('secondsInput');
+        const timerDisplay = document.getElementById('timerDisplay');
+        const startBtn = document.getElementById('startBtn');
+        const pauseBtn = document.getElementById('pauseBtn');
+        const resetBtn = document.getElementById('resetBtn');
+    
+        let hours, minutes, seconds;
+        let intervalId;
+    
+        startBtn.addEventListener('click', startTimer);
+        resetBtn.addEventListener('click', resetTimer);
+    
+        function startTimer() {
+          // 입력된 시간 가져오기
+          hours = parseInt(hoursInput.value) || 0;
+          minutes = parseInt(minutesInput.value) || 0;
+          seconds = parseInt(secondsInput.value) || 0;
+    
+          // 타이머 시작
+          intervalId = setInterval(updateTimer, 1000);
+    
+          // 입력 필드 비활성화
+          hoursInput.disabled = true;
+          minutesInput.disabled = true;
+          secondsInput.disabled = true;
+    
+          // 버튼 상태 변경
+          startBtn.textContent = 'Pause';
+          resetBtn.disabled = true;
+          // Pause 버튼 클릭 시
+          startBtn.removeEventListener('click', startTimer);
+          startBtn.addEventListener('click', pauseTimer);
+        }
+
+        function pauseTimer() {
+            // 타이머 정지
+            clearInterval(intervalId);
+          
+            // 버튼 상태 변경
+            startBtn.textContent = 'Start';
+            resetBtn.disabled = false;
+          
+            // Start 버튼 클릭 시
+            startBtn.removeEventListener('click', pauseTimer);
+            startBtn.addEventListener('click', startTimer);
+          }
+    
+        function resetTimer() {
+          // 타이머 초기화
+          clearInterval(intervalId);
+          timerDisplay.textContent = '00:00:00';
+    
+          // 입력 필드 초기화
+          hoursInput.value = '';
+          minutesInput.value = '';
+          secondsInput.value = '';
+    
+          // 입력 필드 활성화
+          hoursInput.disabled = false;
+          minutesInput.disabled = false;
+          secondsInput.disabled = false;
+    
+          // 버튼 상태 변경
+          startBtn.disabled = false;
+          pauseBtn.disabled = true;
+          startBtn.style.display = 'inline-block';
+          pauseBtn.style.display = 'none';
+        }
+        function updateTimer() {
+            // 시간 감소
+            seconds--;
+          
+            // 시간이 음수일 경우
+            if (seconds < 0) {
+              minutes--;
+              seconds = 59;
+            }
+            if (minutes < 0) {
+              hours--;
+              minutes = 59;
+            }
+          
+            // 시간을 두 자리 숫자로 표시
+            const formattedHours = hours.toString().padStart(2, '0');
+            const formattedMinutes = minutes.toString().padStart(2, '0');
+            const formattedSeconds = seconds.toString().padStart(2, '0');
+          
+            // 타이머 표시
+            timerDisplay.textContent = `${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
+          
+            // 타이머 종료
+            if (hours === 0 && minutes === 0 && seconds === 0) {
+              clearInterval(intervalId);
+              resetTimer();
+            }
+          }
+          </script>
+        
+</body>
+</html>
