@@ -1,5 +1,5 @@
 import { useSelector,useDispatch } from "react-redux";
-import { changeAge, changeName } from "./store.js";
+import { addCount, changeName, subCount } from "./store/userSlice.js";
 
 function App() {
 
@@ -15,9 +15,15 @@ function App() {
       <button onClick={()=>{
           dispatch(changeName())
       }}>이름바꿔</button>
+
+      <h1>{state.user2[0].count}</h1>
+
       <button onClick={()=>{
-          dispatch(changeAge())
-      }}>나이올려</button>
+          dispatch(addCount(0))
+      }}>++</button>
+      <button onClick={()=>{
+          dispatch(subCount(0))
+      }}>--</button>
     </div>
   );
 }
